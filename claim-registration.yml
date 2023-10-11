@@ -36,7 +36,7 @@ paths:
                 $ref: '#/components/schemas/Error'
       operationId: register
       summary: Register insurance claim
-  /claim/{claimId}:
+  /claim:
     get:
       parameters:
         -
@@ -47,7 +47,7 @@ paths:
           description: Id of a claim
           schema:
             type: string
-          in: path
+          in: query
           required: true
       responses:
         '200':

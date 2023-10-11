@@ -28,9 +28,15 @@ paths:
                   value:
                     claimId: CLAIM-123
           description: Returned if claim has been successfully registered
+        500:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
       operationId: register
       summary: Register insurance claim
-  /claim:
+  /claim/{claimId}:
     get:
       parameters:
         -
@@ -58,6 +64,12 @@ paths:
           description: If Claim with given id is found
         '404':
           description: If no claim for give id is available
+        '500':
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
       operationId: getClaim
       summary: Get Claim by Id
     parameters:
@@ -106,3 +118,11 @@ components:
           type: string
       example:
         claimId: CLAIM-123
+    Error:
+      type: object
+      required:
+        - message
+      properties:
+        message:
+          description: A human readable error message
+          type: string

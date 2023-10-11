@@ -9,6 +9,7 @@ id = a8fb5a91-856f-4161-a950-2b770f9decb0
 
 [config.relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"28650973-b9dc6e5b-f972-4aa7-9c8c-e73f205edbe6","path":"Claim Insurance Tests.json","metaData":{"generateCollectionPreferences":"{\"requestNameSource\":\"Fallback\",\"indentCharacter\":\"Space\",\"parametersResolution\":\"Schema\",\"folderStrategy\":\"Tags\",\"includeAuthInfoInExample\":true,\"enableOptionalParameters\":true,\"keepImplicitHeaders\":false,\"includeDeprecated\":true,\"alwaysInheritAuthentication\":false,\"updateCollectionSync\":true,\"requestParametersResolution\":\"Schema\",\"exampleParametersResolution\":\"Schema\"}"}}
 
 [config.relations.collections.metaData]
 

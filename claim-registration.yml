@@ -2,6 +2,7 @@ openapi: 3.0.2
 info:
   title: Claim Registration API
   version: 1.1.0
+  description: Insurance Claim API
 paths:
   /register:
     post:
@@ -126,3 +127,10 @@ components:
         message:
           description: A human readable error message
           type: string
+  securitySchemes:
+    ApiKey:
+      type: apiKey
+      in: header
+      name: X-Api-Key
+security:
+  - ApiKey: []

@@ -1,6 +1,6 @@
 openapi: 3.0.2
 info:
-  title: Claim Registration API
+  title: Claim Registration API changing title
   version: 1.1.0
   description: Insurance Claim API
 paths:

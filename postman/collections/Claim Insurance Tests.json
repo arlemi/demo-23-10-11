@@ -189,41 +189,6 @@
 					"body": "{\n  \"insuranceId\": \"velit aliqua\",\n  \"timestamp\": \"1986-01-22T23:33:10.995Z\",\n  \"description\": \"velit anim\"\n}"
 				},
 				{
-					"id": "fab10c05-b871-4b93-bab6-7d9d350352b4",
-					"name": "If no claim for give id is available",
-					"originalRequest": {
-						"method": "GET",
-						"header": [
-							{
-								"description": "Added as a part of security scheme: apikey",
-								"key": "X-Api-Key",
-								"value": "<API Key>"
-							}
-						],
-						"url": {
-							"raw": "{{baseUrl}}/register?claimId=<string>",
-							"host": [
-								"{{baseUrl}}"
-							],
-							"path": [
-								"register"
-							],
-							"query": [
-								{
-									"description": "(Required) Id of a claim",
-									"key": "claimId",
-									"value": "<string>"
-								}
-							]
-						}
-					},
-					"status": "Not Found",
-					"code": 404,
-					"_postman_previewlanguage": "Text",
-					"header": [],
-					"cookie": []
-				},
-				{
 					"id": "fa778e9b-f88f-44de-9359-5e90879a3c19",
 					"name": "Unexpected error",
 					"originalRequest": {
